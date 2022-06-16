@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="AdventCalender.MainPage">
+    <StackLayout>
+        <Grid Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image Source="BackgroundXmas.jpg" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="0" Grid.RowSpan="5" HorizontalOptions="Center" VerticalOptions="Center" Rotation="90" Scale="2"/>
+            <ImageButton BackgroundColor="White" BorderColor="Red" BorderWidth="2" Grid.Row="0" Source="sinclairspectrum.jpg" Command="{Binding SinclairImgCommand}" Grid.Column="0" Margin="4" />
+            <Label Grid.Row="0" Grid.Column="0"
+           Text="1"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="DarkRed"
+           FontFamily="Xmas" 
+           Padding="0"
+           Opacity="0.7" 
+           FontSize="60"/>
+            <ImageButton BackgroundColor="#38A94B" BorderColor="DarkCyan" BorderWidth="2" Grid.Row="0" Source="amstradcpc64.jpg" Command="{Binding AmstradImgCommand}" Grid.Column="1" Margin="4"/>
+            <Label Grid.Row="0" Grid.Column="1"
+           Text="2" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="DarkCyan"
+           Opacity="0.7"
+           FontSize="60"/>
+            <ImageButton BackgroundColor="OrangeRed" BorderColor="DarkGoldenrod" BorderWidth="2" Grid.Row="0" Source="commodore64.jpg" Command="{Binding CommodoreImgCommand}" Grid.Column="2" Margin="4"/>
+            <Label Grid.Row="0" Grid.Column="2"
+           Text="3" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="DarkGoldenrod"
+           Opacity="0.7" 
+           FontSize="60"/>
+            <ImageButton BackgroundColor="Aqua" BorderColor="Purple" BorderWidth="2" Grid.Row="0" Source="VegetaHat.jpg" Command="{Binding VegetaImgCommand}" Grid.Column="3" Margin="4"/>
+            <Label Grid.Row="0" Grid.Column="3"
+           Text="4" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Purple"
+           Opacity="0.7"         
+           FontSize="60"/>
+            <ImageButton BackgroundColor="Red" BorderColor="Black" BorderWidth="2" Grid.Row="0" Source="XmasDeku.jpg" Command="{Binding XmasDekuImgCommand}" Grid.Column="4" Margin="4"/>
+            <Label Grid.Row="0" Grid.Column="4"
+           Text="5" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Black"
+           Opacity="0.7"         
+           FontSize="60"/>
+            <ImageButton BackgroundColor="Yellow" BorderColor="Gold" BorderWidth="2" Grid.Row="1" Source="homerXmas.jpg" Command="{Binding homerImgCommand }" Grid.Column="0" Margin="4"/>
+            <Label Grid.Row="1" Grid.Column="0"
+           Text="6" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Gold"
+           Opacity="0.7"         
+           FontSize="60"/>
+            <ImageButton BackgroundColor="Violet" BorderColor="Red" BorderWidth="2" Grid.Row="1" Source="RamsayReindeer.jpg" Command="{Binding RamsayImgCommand }" Grid.Column="1" Margin="4"/>
+            <Label Grid.Row="1" Grid.Column="1"
+           Text="7" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Red"
+           Opacity="0.7"         
+           FontSize="60"/>
+            <ImageButton BackgroundColor="Orange" BorderColor="Purple" BorderWidth="2" Opacity="0.5" Grid.Row="1" Source="onepiece.jpg" Command="{Binding oncepieceImgCommand }" Grid.Column="2" Margin="4"/>
+            <Label Grid.Row="1" Grid.Column="2"
+           Text="8" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Purple"
+           Opacity="0.7"         
+           FontSize="60"/>
+            <ImageButton BackgroundColor="DarkRed" BorderColor="Green" BorderWidth="2" Grid.Row="1" Source="naruto.jpg" Command="{Binding narutoImgCommand }" Grid.Column="3" Margin="4"/>
+            <Label Grid.Row="1" Grid.Column="3"
+           Text="9" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Green"
+           Opacity="0.7"         
+           FontSize="60"/>
+            <ImageButton BackgroundColor="DarkBlue" BorderColor="Gold" BorderWidth="2" Grid.Row="1" Source="GOKU.jpg" Command="{Binding GOKUImgCommand }" Grid.Column="4" Margin="4"/>
+            <Label Grid.Row="1" Grid.Column="4"
+           Text="10" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Gold"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Green" BorderColor="Orange" BorderWidth="2" Grid.Row="2" Source="myXmasAcedemia.jpg" Command="{Binding AcedemiaImgCommand }" Grid.Column="0" Margin="4"/>
+            <Label Grid.Row="2" Grid.Column="0"
+           Text="11" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Orange"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Pink" BorderColor="OrangeRed" BorderWidth="2" Grid.Row="2" Source="andrew.jpg" Command="{Binding andrewImgCommand }" Grid.Column="1" Margin="4"/>
+            <Label Grid.Row="2" Grid.Column="1"
+           Text="12" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="OrangeRed"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Blue" BorderColor="Gold" BorderWidth="2" Grid.Row="2" Source="Gogeta.jpg" Command="{Binding gogetaImgCommand }" Grid.Column="2" Margin="4"/>
+            <Label Grid.Row="2" Grid.Column="2"
+           Text="13" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Gold"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="White" BorderColor="Red" BorderWidth="2" Grid.Row="2" Source="baku.jpg" Command="{Binding bakuImgCommand }" Grid.Column="3" Margin="4"/>
+            <Label Grid.Row="2" Grid.Column="3"
+           Text="14" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Red"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Gold" BorderColor="Purple" BorderWidth="2" Grid.Row="2" Source="gokusanta.jpg" Command="{Binding gokusantaImgCommand }" Grid.Column="4" Margin="4"/>
+            <Label Grid.Row="2" Grid.Column="4"
+           Text="15" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Purple"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Purple" BorderColor="Gold" BorderWidth="2" Grid.Row="3" Source="scoobyxmas" Command="{Binding scoobyImgCommand }" Grid.Column="0" Margin="4"/>
+            <Label Grid.Row="3" Grid.Column="0"
+           Text="16" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Gold"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Green" BorderColor="blue" BorderWidth="2" Grid.Row="3" Source="hellkittyxmas.jpg" Command="{Binding kittyImgCommand}" Grid.Column="1" Margin="4"/>
+            <Label Grid.Row="3" Grid.Column="1"
+           Text="17" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Blue"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Gold" BorderColor="MediumPurple" BorderWidth="2" Grid.Row="3" Source="cayde.jpg" Command="{Binding caydeImgCommand }" Grid.Column="2" Margin="4"/>
+            <Label Grid.Row="3" Grid.Column="2"
+           Text="18" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="MediumPurple"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Brown" BorderColor="OrangeRed" BorderWidth="2" Grid.Row="3" Source="xmaspickchu.jpg" Command="{Binding pikaImgCommand }" Grid.Column="3" Margin="4"/>
+            <Label Grid.Row="3" Grid.Column="3"
+           Text="19" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="OrangeRed"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Yellow" BorderColor="Turquoise" BorderWidth="2" Grid.Row="3" Source="goldenfreiza.jpg" Command="{Binding friezaImgCommand }" Grid.Column="4" Margin="4"/>
+            <Label Grid.Row="3" Grid.Column="4"
+           Text="20" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Turquoise"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Orange" BorderColor="ForestGreen" BorderWidth="2" Grid.Row="4" Source="Saitamaxmas.jpg" Command="{Binding saitamaImgCommand }" Grid.Column="0" Margin="4"/>
+            <Label Grid.Row="4" Grid.Column="0"
+           Text="21" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="ForestGreen"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Pink" BorderColor="Blue" BorderWidth="2" Grid.Row="4" Source="sonicxmas.jpg" Command="{Binding sonicImgCommand }" Grid.Column="1" Margin="4"/>
+            <Label Grid.Row="4" Grid.Column="1"
+           Text="22" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Blue"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Purple" BorderColor="Gold" BorderWidth="2" Grid.Row="4" Source="Harrypotter.jpg" Command="{Binding harrypotterImgCommand }" Grid.Column="2" Margin="4"/>
+            <Label Grid.Row="4" Grid.Column="2"
+           Text="23" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Gold"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Green" BorderColor="Red" BorderWidth="2" Grid.Row="4" Source="bleachxmas.jpg" Command="{Binding bleachImgCommand }" Grid.Column="3" Margin="4"/>
+            <Label Grid.Row="4" Grid.Column="3"
+           Text="24" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="Red"
+           Opacity="0.7"         
+           FontSize="50"/>
+            <ImageButton BackgroundColor="Red" BorderColor="LawnGreen" BorderWidth="2" Grid.Row="4" Source="RickMorty.jpg" Command="{Binding shwiftmasImgCommand }" Grid.Column="4" Margin="4"/>
+            <Label Grid.Row="4" Grid.Column="4"
+           Text="25" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center"
+           TextColor="LawnGreen"
+           Opacity="0.7" 
+           FontSize="50"/>
+            <Label Text="Clicked: " Grid.Column="0" Grid.Row="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="18"/>
+            <Frame x:Name="Text" WidthRequest="180" HeightRequest="60" BorderColor="Black" BackgroundColor="Transparent" Opacity="0.8"
+           VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="8.5"  >
+                <Label Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5" Text="{Binding CaptionText}" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           HorizontalTextAlignment="Center"
+           VerticalTextAlignment="Center" FontSize="17"/>
+            </Frame>
+        </Grid>
+    </StackLayout>
+</ContentPage>
