@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdventCarousel.MainPage"
+             >
+
+    <ContentPage.Content>
+        <Grid>
+            <Image x:Name="InitialPage" Source="background.jpg" IsVisible="true" VerticalOptions="StartAndExpand"/>
+        <Image Source="background.jpg" Aspect="AspectFill" VerticalOptions="StartAndExpand"/>
+            <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="430"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Path Data="m181.59251,368.51608l0,-248l286.00001,248l-286.00001,0z" 
+                  Fill="Black" 
+                  Opacity="0.5" Grid.Row="0" 
+                  Grid.ColumnSpan="2"
+                  Grid.Column="0" 
+                  Grid.RowSpan="3" 
+                  Aspect="Fill"
+                  Scale="2.0"/>
+            <Path Data="m181.59251,368.51608l0,-248l286.00001,248l-286.00001,0z"
+                  Fill="#444444"
+                  Opacity="0.5" Grid.Row="0" 
+                  Grid.Column="0" 
+                  Grid.ColumnSpan="2"
+                  Grid.RowSpan="3" 
+                  Rotation="45"
+                  Scale="2.1"/>
+            <Frame Grid.Row="0" Grid.RowSpan="4" BackgroundColor="#BDA8E2" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="200" WidthRequest="200">
+            </Frame>
+            
+            <Label Text="Advent Carousel, Click a Door to reveal a supprise" 
+                   Grid.Row="2" 
+                   HorizontalOptions="Center" 
+                   Grid.ColumnSpan="2"
+                   VerticalOptions="Center" FontSize="20" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center"
+                   FontFamily="xmasR"
+                   TextColor="Azure"/>
+            <CarouselView x:Name="CVDoors" Grid.Row="0"
+                          PeekAreaInsets="20" PositionChanged="CVDoors_PositionChanged" Grid.ColumnSpan="2" ItemsSource="{Binding CVDoors}" IndicatorView="Showme">
+                <CarouselView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"
+                                       SnapPointsType="MandatorySingle"
+                                       SnapPointsAlignment="Center"
+                                       ItemSpacing="10"/>
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame x:Name="MainFrame" CornerRadius="30" Margin="20" Grid.ColumnSpan="2" BackgroundColor="{Binding BgColor}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="250"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="45"/>
+                                </Grid.RowDefinitions>
+                                    <Image Source="{Binding ImageSource}"
+                                       Grid.Row="0"
+                                       Grid.ColumnSpan="2"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Aspect="AspectFill"/>
+                                <Label Text="{Binding DoorNo}" Grid.ColumnSpan="2" FontSize="Title" Grid.Row="1" FontAttributes="Bold" FontFamily="xmasFont"
+                                       HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Character}" Grid.ColumnSpan="2" FontSize="Title" Grid.Row="2"
+                                       HorizontalTextAlignment="Center"/>
+                                <Frame x:Name="frameBtn" Grid.ColumnSpan="2" BackgroundColor="{Binding BgColor}" Grid.RowSpan="3" Grid.Row="0"/>
+
+                                <Button Text="Reveal" Grid.ColumnSpan="2" FontAttributes="Bold" FontSize="15" BackgroundColor="Accent" BorderColor="Gold" BorderWidth="2" Grid.Row="3" HorizontalOptions="Center"
+                                        Clicked="Button_Clicked" WidthRequest="130" HeightRequest="80" />
+                                
+
+                            </Grid>
+                            </Frame>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+                
+            </CarouselView>
+            <IndicatorView x:Name="Showme"
+                           IndicatorColor="LightGray"
+                           SelectedIndicatorColor="Black"
+                           HorizontalOptions="Center" 
+                           VerticalOptions="Start"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="2"
+                           />
+        </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

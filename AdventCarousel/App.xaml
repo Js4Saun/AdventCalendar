@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdventCarousel.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="Door">green</Color>
+
+            <Style x:Key="AdventCarouselView" TargetType="CarouselView">
+                <Setter Property="IsBounceEnabled" Value="True"/>
+            </Style>
+            
+            <ControlTemplate x:Key="MyTemplate">
+                <StackLayout>
+                    <Label Text="Header"
+                           BackgroundColor="MediumPurple"
+                           TextColor="white"
+                           VerticalOptions="Start"/>
+                    <ContentPresenter VerticalOptions="FillAndExpand"/>
+                    <Label Text="Footer"
+                           BackgroundColor="MediumPurple"
+                           TextColor="white"
+                           VerticalOptions="End"/>
+                </StackLayout>
+            </ControlTemplate>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
